@@ -95,8 +95,6 @@
 		CD8B8AAE1D7EEA8F0085BE1C /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = CD8B8AA81D7EEA8F0085BE1C /* Placeholder */; };
 		CD8B8AAF1D7EEA8F0085BE1C /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = CD8B8AAA1D7EEA8F0085BE1C /* Placeholder */; };
 		CD8B8AB41D7EEB570085BE1C /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8B8AB31D7EEB570085BE1C /* UncaughtExceptionHandler.m */; };
-		CD8B8ABA1D7EEBF90085BE1C /* NSMutableDictionary+SafeSetObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8B8AB91D7EEBF90085BE1C /* NSMutableDictionary+SafeSetObject.m */; };
-		CD8B8ABD1D7EEC590085BE1C /* NSMutableArray+SafeAddObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8B8ABC1D7EEC590085BE1C /* NSMutableArray+SafeAddObject.m */; };
 		CD8B8B371D7EED530085BE1C /* UILabel+Text.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8B8B361D7EED530085BE1C /* UILabel+Text.m */; };
 		CD8B8B3E1D7EEDA80085BE1C /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8B8B3A1D7EEDA80085BE1C /* GCDTimer.m */; };
 		CD8B8B3F1D7EEDA80085BE1C /* PlaySoundAndMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8B8B3D1D7EEDA80085BE1C /* PlaySoundAndMusic.m */; };
@@ -332,10 +330,6 @@
 		CD8B8AAA1D7EEA8F0085BE1C /* Placeholder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
 		CD8B8AB21D7EEB570085BE1C /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
 		CD8B8AB31D7EEB570085BE1C /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
-		CD8B8AB81D7EEBF90085BE1C /* NSMutableDictionary+SafeSetObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+SafeSetObject.h"; sourceTree = "<group>"; };
-		CD8B8AB91D7EEBF90085BE1C /* NSMutableDictionary+SafeSetObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+SafeSetObject.m"; sourceTree = "<group>"; };
-		CD8B8ABB1D7EEC590085BE1C /* NSMutableArray+SafeAddObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+SafeAddObject.h"; sourceTree = "<group>"; };
-		CD8B8ABC1D7EEC590085BE1C /* NSMutableArray+SafeAddObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+SafeAddObject.m"; sourceTree = "<group>"; };
 		CD8B8B351D7EED530085BE1C /* UILabel+Text.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Text.h"; sourceTree = "<group>"; };
 		CD8B8B361D7EED530085BE1C /* UILabel+Text.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Text.m"; sourceTree = "<group>"; };
 		CD8B8B391D7EEDA80085BE1C /* GCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTimer.h; sourceTree = "<group>"; };
@@ -854,8 +848,6 @@
 			children = (
 				CD8B8A211D7EE0860085BE1C /* NSArray+XP.h */,
 				CD8B8A221D7EE0860085BE1C /* NSArray+XP.m */,
-				CD8B8ABB1D7EEC590085BE1C /* NSMutableArray+SafeAddObject.h */,
-				CD8B8ABC1D7EEC590085BE1C /* NSMutableArray+SafeAddObject.m */,
 				D4A331BB1E011BAD00871BA9 /* NSArray+Log.h */,
 				D4A331BC1E011BAD00871BA9 /* NSArray+Log.m */,
 			);
@@ -885,8 +877,6 @@
 			children = (
 				CD8B8A2A1D7EE0860085BE1C /* NSDictionary+XP.h */,
 				CD8B8A2B1D7EE0860085BE1C /* NSDictionary+XP.m */,
-				CD8B8AB81D7EEBF90085BE1C /* NSMutableDictionary+SafeSetObject.h */,
-				CD8B8AB91D7EEBF90085BE1C /* NSMutableDictionary+SafeSetObject.m */,
 				D4A331C01E011C0F00871BA9 /* NSDictionary+Log.h */,
 				D4A331C11E011C0F00871BA9 /* NSDictionary+Log.m */,
 			);
@@ -1426,7 +1416,6 @@
 				CD8B8A8B1D7EE0860085BE1C /* UIColor+XP.m in Sources */,
 				CD8B89F01D7EE06D0085BE1C /* AFHTTPSessionManager.m in Sources */,
 				CD8B89F51D7EE06D0085BE1C /* AFURLSessionManager.m in Sources */,
-				CD8B8ABD1D7EEC590085BE1C /* NSMutableArray+SafeAddObject.m in Sources */,
 				CD8B8A9B1D7EE0860085BE1C /* XPUserDefault.m in Sources */,
 				CD8B89FA1D7EE06D0085BE1C /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				CD8B896C1D7EDDB40085BE1C /* AppDelegate.m in Sources */,
@@ -1457,7 +1446,6 @@
 				CD8B8B3F1D7EEDA80085BE1C /* PlaySoundAndMusic.m in Sources */,
 				CD8B89F31D7EE06D0085BE1C /* AFURLRequestSerialization.m in Sources */,
 				CD8B89F71D7EE06D0085BE1C /* AFAutoPurgingImageCache.m in Sources */,
-				CD8B8ABA1D7EEBF90085BE1C /* NSMutableDictionary+SafeSetObject.m in Sources */,
 				CD8B89F81D7EE06D0085BE1C /* AFImageDownloader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

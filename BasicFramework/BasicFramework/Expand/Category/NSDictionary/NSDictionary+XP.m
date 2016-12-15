@@ -383,7 +383,9 @@
  **/
 - (void) setWaySafeObject:(id) value forKey:(NSString *) akey
 {
-    if (value != nil) [self setObject:value forKey:akey];
+    if (value && akey) {
+        [self setObject:value forKey:akey];
+    }
 }
 
 /**
@@ -391,7 +393,7 @@
  **/
 - (void) setWaySafeString:(NSString *) value forKey:(NSString *) akey
 {
-    if (value != nil) [self setObject:value forKey:akey];
+    [self setWaySafeObject:value forKey:akey];
 }
 
 /**
@@ -399,7 +401,7 @@
  **/
 - (void) setWaySafeNumber:(NSNumber *) value forKey:(NSString *) akey
 {
-    if (value != nil) [self setObject:value forKey:akey];
+    [self setWaySafeObject:value forKey:akey];
 }
 
 /**
@@ -407,7 +409,7 @@
  **/
 - (void) setWaySafeArray:(NSArray *) value forKey:(NSString *) akey
 {
-    if (value != nil) [self setObject:value forKey:akey];
+    [self setWaySafeObject:value forKey:akey];
 }
 
 /**
@@ -415,7 +417,7 @@
  **/
 - (void) setWaySafeDictionary:(NSDictionary *) value forKey:(NSString *) akey
 {
-    if (value != nil) [self setObject:value forKey:akey];
+    [self setWaySafeObject:value forKey:akey];
 }
 
 /**
@@ -423,7 +425,7 @@
  **/
 - (void) setWaySafeInteget:(NSInteger) value forKey:(NSString *) akey
 {
-    [self setObject:[NSNumber numberWithInteger:value] forKey:akey];
+    [self setWaySafeObject:[NSNumber numberWithInteger:value] forKey:akey];
 }
 
 /**
@@ -431,7 +433,7 @@
  **/
 - (void) setWaySafeUInteger:(NSUInteger) value forKey:(NSString *) akey
 {
-    [self setObject:[NSNumber numberWithUnsignedInteger:value] forKey:akey];
+    [self setWaySafeObject:[NSNumber numberWithUnsignedInteger:value] forKey:akey];
 }
 
 /**
@@ -439,7 +441,7 @@
  **/
 - (void) setWaySafeBOOL:(BOOL) value forKey:(NSString *) akey
 {
-    [self setObject:[NSNumber numberWithBool:value] forKey:akey];
+    [self setWaySafeObject:[NSNumber numberWithBool:value] forKey:akey];
 }
 
 /**
@@ -447,7 +449,7 @@
  **/
 - (void) setWaySafeInt16:(int16_t) value forKey:(NSString *) akey
 {
-    [self setObject:[NSNumber numberWithInt:value] forKey:akey];
+    [self setWaySafeObject:[NSNumber numberWithShort:value] forKey:akey];
 }
 
 /**
@@ -455,7 +457,7 @@
  **/
 - (void) setWaySafeInt32:(int32_t) value forKey:(NSString *) akey
 {
-    [self setObject:[NSNumber numberWithInt:value] forKey:akey];
+    [self setWaySafeObject:[NSNumber numberWithInt:value] forKey:akey];
 }
 
 /**
@@ -463,7 +465,7 @@
  **/
 - (void) setWaySafeInt64:(int64_t) value forKey:(NSString *) akey
 {
-    [self setObject:[NSNumber numberWithLongLong:value] forKey:akey];
+    [self setWaySafeObject:[NSNumber numberWithLongLong:value] forKey:akey];
 }
 
 /**
@@ -471,7 +473,7 @@
  **/
 - (void) setWaySafeChar:(char) value forKey:(NSString *) akey
 {
-    [self setObject:[NSNumber numberWithChar:value] forKey:akey];
+    [self setWaySafeObject:[NSNumber numberWithChar:value] forKey:akey];
 }
 
 /**
@@ -479,7 +481,7 @@
  **/
 - (void) setWaySafeShort:(short) value forKey:(NSString *) akey
 {
-    [self setObject:[NSNumber numberWithShort:value] forKey:akey];
+    [self setWaySafeObject:[NSNumber numberWithShort:value] forKey:akey];
 }
 
 /**
@@ -487,7 +489,7 @@
  **/
 - (void) setWaySafeFloat:(float) value forKey:(NSString *) akey
 {
-    [self setObject:[NSNumber numberWithFloat:value] forKey:akey];
+    [self setWaySafeObject:[NSNumber numberWithFloat:value] forKey:akey];
 }
 
 /**
@@ -495,7 +497,7 @@
  **/
 - (void) setWaySafeDouble:(double) value forKey:(NSString *) akey
 {
-    [self setObject:[NSNumber numberWithDouble:value] forKey:akey];
+    [self setWaySafeObject:[NSNumber numberWithDouble:value] forKey:akey];
 }
 
 /**
@@ -503,7 +505,7 @@
  **/
 - (void) setWaySafeCGFloat:(CGFloat) value forKey:(NSString *) akey
 {
-    [self setObject:[NSNumber numberWithFloat:value] forKey:akey];
+    [self setWaySafeObject:[NSNumber numberWithFloat:value] forKey:akey];
 }
 
 /**
@@ -511,7 +513,7 @@
  **/
 - (void) setWaySafeCGPoint:(CGPoint) value forKey:(NSString *) akey
 {
-    [self setObject:NSStringFromCGPoint(value) forKey:akey];
+    [self setWaySafeObject:NSStringFromCGPoint(value) forKey:akey];
 }
 
 /**
@@ -519,7 +521,7 @@
  **/
 - (void) setWaySafeCGSize:(CGSize) value forKey:(NSString *) akey
 {
-    [self setObject:NSStringFromCGSize(value) forKey:akey];
+    [self setWaySafeObject:NSStringFromCGSize(value) forKey:akey];
 }
 
 /**
@@ -527,7 +529,7 @@
  **/
 - (void) setWaySafeCGRect:(CGRect) value forKey:(NSString *) akey
 {
-    [self setObject:NSStringFromCGRect(value) forKey:akey];
+    [self setWaySafeObject:NSStringFromCGRect(value) forKey:akey];
 }
 
 @end
