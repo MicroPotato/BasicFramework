@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  BasicFramework
+//
+//  Created by txp on 16/9/6.
+//  Copyright © 2016年 Peng. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+    #import "Common_all_header.h"
+    #import "Category_header.h"
+    #import "Constants.h"
+    #import "Utils_header.h"
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

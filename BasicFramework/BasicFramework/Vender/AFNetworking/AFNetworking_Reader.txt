@@ -1,0 +1,10 @@
+1.依赖库:
+	<SystemConfiguration/SystemConfiguration.h>
+	<MobileCoreServices/MobileCoreServices.h>
+    <Security/Security.h>
+
+2.AFNetworking 3.0 version
+新设备要求: iOS 7, Mac OS X 10.9, watchOS 2, tvOS 9, & Xcode 7
+
+3.
+http://www.jianshu.com/p/047463a7ce9b
